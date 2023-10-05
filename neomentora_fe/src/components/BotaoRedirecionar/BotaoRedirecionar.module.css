@@ -1,0 +1,16 @@
+/* BotaoRedirecionar.module.css */
+
+.botao {
+    background-color: #5871EB;
+    color: #fff;
+    padding: 10px 70px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.botao:hover {
+    background-color: #4c66eb;
+}
