@@ -1,0 +1,15 @@
+/* Original styles for active link */
+.linkDestacado {
+    color: #C3C9FF; /* Change active link color to white */
+  }
+  
+  .linkNormal{
+    color: #fff;
+  }
+
+  @media only screen and (max-width: 1005px){
+    .linkDestacado{
+      background-color: #ffffff;
+      color: #000;
+    }
+  }
