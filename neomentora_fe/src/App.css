@@ -2,7 +2,7 @@ body {
   font-family: 'Encode Sans', sans-serif; /* Use a fonte "Encode Sans" como primeira opção */
   margin: 0;
   padding: 0;
-  background-color: #202227;
+  background-color: #202227; z-index: 99999999999999;
 }
 
 .container {

@@ -1,0 +1,14 @@
+body{
+    background-color: #202227; z-index: 99999999999999;
+}
+
+.canditatese{
+    background-color: #202227; z-index: 99999999999999;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}

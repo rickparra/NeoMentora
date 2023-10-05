@@ -1,5 +1,5 @@
 body {
-    background-image: url('../../assets/Images/passos-magicos1.png');
+    background-image: url('../../assets/Images/passos-magicos1.png'); z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
 }
