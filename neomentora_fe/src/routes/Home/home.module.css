@@ -11,19 +11,19 @@ body {
 }
 
 .left {
-    width: 75%;
-    margin-top: -15rem;
+    width: clamp(30%, 75vw, 100%); /* Use clamp para dimensionar a largura de 30% a 100% */
+    margin-top: clamp(-15rem, 10vw, -10rem); /* Use clamp para ajustar a margem superior */
 }
 
 .right {
-    width: 25%;
+    width: clamp(20%, 25vw, 30%); /* Use clamp para dimensionar a largura de 20% a 30% */
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 4rem;
-    margin-top: 20rem;
+    gap: clamp(2rem, 2vw, 4rem); /* Use clamp para ajustar o espaçamento entre os ícones */
+    margin-top: clamp(10rem, 10vw, 20rem); /* Use clamp para ajustar a margem superior */
 }
 
 .centerVertically {
@@ -33,12 +33,13 @@ body {
 }
 
 .icon {
-    font-size: 20px;
+    font-size: clamp(12px, 3vw, 30px); /* Use clamp para ajustar o tamanho dos ícones */
     color: #ffffff;
+    cursor: pointer;
 }
 
 .text {
-    margin-top: clamp(5rem, 10vw, 11rem);
+    margin-top: clamp(15rem, 10vw, 11rem);
     margin-left: clamp(10px, 10vw, 11rem);
 }
 
@@ -67,28 +68,33 @@ body {
     color: #fff;
     max-width: 41rem;
     font-size: clamp(15px, 1vw, 17px);
-    letter-spacing: 1px;
-    line-height: 1.5;
+    letter-spacing: clamp(1px, 1vw, 2px); /* Ajuste o valor mínimo */
+    line-height: clamp(1.5, 1vw, 2); /* Ajuste o valor mínimo */
 }
 
-.botao{
+.botao {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: clamp(6rem, 5vw, 10rem); /* Use clamp para ajustar a margem superior */
+    margin-left: clamp(25rem, 20vw, 30rem); /* Use clamp para ajustar a margem esquerda */
 }
 
 @media (max-width: 768px) {
     .titulo {
-        margin-top: 8rem;
+        margin-top: clamp(8rem, 5vw, 10rem); /* Use clamp para ajustar a margem superior */
     }
     .legenda {
         margin-right: clamp(10px, 10vw, 11rem);
     }
     .right {
-        flex-direction: column; /* Mude para 'column' para mover os ícones para baixo em telas menores */
-        margin-top: 2rem; /* Ajuste a margem superior conforme necessário */
+        flex-direction: column;
+        margin-top: clamp(2rem, 5vw, 5rem); /* Use clamp para ajustar a margem superior */
     }
     .centerVertically {
         flex-direction: column;
+    }
+    .botao{
+        margin-left: 9rem;
     }
 }
