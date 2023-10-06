@@ -1,6 +1,6 @@
 ![logo.png](doc%2Flogo.png)<br>
 ![Licença](https://img.shields.io/badge/license-MIT-green)
-![Badge em Desenvolvimento](https://img.shields.io/badge/release%20date-july/23-yellow)
+![Badge em Desenvolvimento](https://img.shields.io/badge/release%20date-out/05-yellow)
 ![Maven Version](https://img.shields.io/badge/maven-4.0.0-blue)
 ![Java Version](https://img.shields.io/badge/java-17-blue)
 
