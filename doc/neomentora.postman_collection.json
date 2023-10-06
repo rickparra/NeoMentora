@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "350c2721-6c7e-4367-9752-3faa1839ebfb",
+		"name": "neomentora",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29499384"
+	},
+	"item": [
+		{
+			"name": "get mentor by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/neomentora/user/mentor?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"neomentora",
+						"user",
+						"mentor"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all mentor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/neomentora/user/mentor/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"neomentora",
+						"user",
+						"mentor",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get investor by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/neomentora/user/investor?id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"neomentora",
+						"user",
+						"investor"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all investor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/neomentora/user/investor/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"neomentora",
+						"user",
+						"investor",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get small business by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/neomentora/user/smallbusiness/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"neomentora",
+						"user",
+						"smallbusiness",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all small business",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/neomentora/user/smallbusiness?id=3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"neomentora",
+						"user",
+						"smallbusiness"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create mentor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"fulano de tal\",\r\n    \"email\": \"fulano@gmail.com4\",\r\n    \"ddd\": 11,\r\n    \"phone\": 123212321,\r\n    \"specialty\": \"FINANCE\",\r\n    \"photo_url\": \"https://sm.ign.com/t/ign_br/screenshot/default/darth-vader_5yvm.1200.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/neomentora/user/mentor",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"neomentora",
+						"user",
+						"mentor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create investor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"fulano de tal\",\r\n    \"email\": \"fulano@gmail.com\",\r\n    \"ddd\": 11,\r\n    \"phone\": 123212321,\r\n    \"areas_of_interest\": \"fincanceiro\",\r\n    \"amount_available_for_investment\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/neomentora/user/investor",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"neomentora",
+						"user",
+						"investor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create smaill business",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"fulano de tal\",\r\n    \"email\": \"fulano@gmail.com\",\r\n    \"ddd\": 11,\r\n    \"phone\": 123212321,\r\n    \"type_of_document\": \"CPF\",\r\n    \"document\": \"12345678901\",\r\n    \"activity_sector\": \"setor de atividade\",\r\n    \"problem_or_challenge\": \"meu problema é ter problema\",\r\n    \"photo_url\": \"https://sm.ign.com/ign_br/screenshot/default/imagem-2023-09-04-171030002_zt57.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/neomentora/user/smallBusiness",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"neomentora",
+						"user",
+						"smallBusiness"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
