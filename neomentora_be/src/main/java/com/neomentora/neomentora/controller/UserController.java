@@ -11,6 +11,7 @@ import com.neomentora.neomentora.service.MentorService;
 import com.neomentora.neomentora.service.SmallBusinessService;
 import com.neomentora.neomentora.util.Pagination;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,6 +22,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
 @RequestMapping(path = "/user")
+@CrossOrigin(origins = {"http://localhost:5173/"})
 public record UserController(
         MentorService mentorService,
         InvestorService investorService,
