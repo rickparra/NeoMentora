@@ -4,8 +4,8 @@
     box-sizing: border-box;
   }
   
-  :root {
-
+  body{
+    background-color: #202227; z-index: 99999999999999;
   }
   
   #root {

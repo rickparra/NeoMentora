@@ -19,9 +19,8 @@ header {
   justify-content: space-between;
   padding: 0 100px;
   transition: height 0.5s ease;
+  background-color: #202227;
 }
-
-.header.scrolled {}
 
 .logo {
   font-size: 13px;

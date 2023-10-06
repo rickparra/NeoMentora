@@ -1,0 +1,168 @@
+/* Reset de bordas vermelhas em todos os elementos
+* {
+    border: 2px solid red;
+} */
+
+/* Estilos para o componente NegocioScreen */
+
+.negocio {
+    padding-top: 2rem;
+    padding-left: 5rem;
+}
+
+.top {
+    margin-bottom: 20px;
+    color: #fff;
+    line-height: 0.000001;
+}
+
+.top p {
+    color: #8692A6;
+    font-size: 16px;
+    margin-bottom: 5rem;
+}
+
+.inline {
+    display: flex;
+    align-items: center;
+}
+
+.specialTitle {
+    color: #C3C9FF;
+    margin-left: 10px;
+}
+
+.inputContainer {
+    color: #8692A6;
+    font-size: 13px;
+    display: flex;
+    gap: 7rem;
+}
+
+.inputSection {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputGroup label {
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-top: 1rem;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+    background-color: #282A2F;
+    width: 20rem;
+    height: 3rem;
+    border: 0.5px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.mid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.midFoto{
+    margin-left: 5rem;
+    margin-top: 0.5rem;
+}
+
+.selectedImage {
+    width: 200px; /* Largura desejada da div */
+    height: 200px; /* Altura desejada da div (mesma largura para um quadrado) */
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coverImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.selectedImage img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.botton{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* Estilos para o checkbox */
+.checked {
+    margin: -6px 0; /* Adicione margem vertical */
+    margin-left: 1rem;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #5871EB; /* Cor da borda quando marcado */
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.checked::before {
+    content: "\2713"; /* Símbolo de check ✔ */
+    font-size: 16px;
+    color: #5871EB; /* Cor do check quando marcado */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Oculta o check por padrão */
+}
+
+/* Estilos para o checkbox quando marcado */
+.checked:checked::before {
+    opacity: 1; /* Torna o check visível quando marcado */
+}
+
+/* Estilos para o botão "Selecionar Imagem" */
+.selectImageButton {
+    background-color: #5871EB; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno (ajuste conforme necessário) */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer;
+    font-size: 16px; /* Tamanho do texto */
+    margin-bottom: 10px; /* Espaço abaixo do botão */
+    margin-left: 5.5rem;
+    margin-top: 1rem;
+}
+
+.selectImageButton:hover {
+    background-color: #4561ec; /* Cor de fundo ao passar o mouse sobre o botão */
+}
+
+.selectImageButton:focus {
+    outline: none; /* Remove a borda de foco padrão */
+}
+
+/* Estilos para o texto dos termos e condições */
+.termos {
+    color: #fff;
+}
