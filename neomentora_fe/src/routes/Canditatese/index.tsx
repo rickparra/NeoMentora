@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Card from '../../components/Card';
 import styles from './canditatese.module.css';
 
@@ -6,9 +6,9 @@ import card2 from '../../assets/Images/banner2-1.png';
 import card1 from '../../assets/Images/banner3_1.png';
 import card3 from '../../assets/Images/banner4_1.png';
 
-import MentorScreen from './MentorScreen'; 
-import InvestidorScreen from './InvestidorScreen'; 
-import NegocioScreen from './NegocioScreen'; 
+import MentorScreen from './Mentor/MentorScreen'; 
+import InvestidorScreen from './Investidor/InvestidorScreen'; 
+import NegocioScreen from './Negocio/NegocioScreen'; 
 
 export default function Canditatese() {
     const [selectedCard, setSelectedCard] = useState<string | null>(null);
